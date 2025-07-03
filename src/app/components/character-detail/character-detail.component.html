@@ -1,0 +1,18 @@
+<div class="character-detail" *ngIf="character">
+  <h2>{{ character.name }}</h2>
+  
+  <div class="info-block">
+    <strong>Species:</strong>
+    <span>{{ character.species }}</span>
+  </div>
+
+  <div class="info-block">
+    <strong>Movies:</strong>
+    <span>{{ character.movies?.join(', ') || 'Unknown' }}</span>
+  </div>
+
+  <div class="info-block">
+    <strong>Spaceships:</strong>
+    <span>{{ character.spaceships?.join(', ') || 'None' }}</span>
+  </div>
+</div>

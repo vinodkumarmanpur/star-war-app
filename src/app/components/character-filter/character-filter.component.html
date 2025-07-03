@@ -1,0 +1,33 @@
+<form (ngSubmit)="applyFilters()" class="filter-card p-3">
+    <h5 class="text-success fw-bold text-center mb-3">FILTERS</h5>
+
+    <!-- Movie Dropdown -->
+    <div class="mb-3">
+        <label for="movie" class="form-label fw-bold">Movie</label>
+        <select id="movie" class="form-select" [(ngModel)]="filters.movie" name="movie">
+            <option value="">All</option>
+            <option *ngFor="let movie of movies" [value]="movie">{{ movie }}</option>
+        </select>
+    </div>
+
+    <!-- Species Dropdown -->
+    <div class="mb-3">
+        <label for="species" class="form-label fw-bold">Species</label>
+        <select id="species" class="form-select" [(ngModel)]="filters.species" name="species">
+            <option value="">All</option>
+            <option *ngFor="let s of speciesList" [value]="s">{{ s }}</option>
+        </select>
+    </div>
+
+    <!-- Birth Year Range -->
+    <div class="mb-3">
+        <label class="form-label fw-bold">Birth Year Range</label>
+        <input type="text" class="form-control mb-2" [(ngModel)]="filters.birthYearFrom" name="birthYearFrom"
+            placeholder="From (e.g. 30BBY)">
+        <input type="text" class="form-control" [(ngModel)]="filters.birthYearTo" name="birthYearTo"
+            placeholder="To (e.g. 5ABY)">
+    </div>
+
+    <!-- Search Button -->
+    <button type="submit" class="btn btn-success w-100">SEARCH</button>
+</form>

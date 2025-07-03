@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Luke Skywalker",
+    "species": "Human",
+    "birthYear": "19BBY",
+    "movies": ["Episode IV", "Episode V", "Episode VI", "Episode VIII"],
+    "spaceships": ["X-wing", "Imperial shuttle"]
+  },
+  {
+    "id": 2,
+    "name": "Leia Organa",
+    "species": "Human",
+    "birthYear": "19BBY",
+    "movies": ["Episode IV", "Episode V", "Episode VI", "Episode VII", "Episode VIII", "Episode IX"],
+    "spaceships": ["Tantive IV"]
+  },
+  {
+    "id": 3,
+    "name": "Darth Vader",
+    "species": "Human",
+    "birthYear": "41.9BBY",
+    "movies": ["Episode III", "Episode IV", "Episode V", "Episode VI"],
+    "spaceships": ["TIE Advanced x1"]
+  },
+  {
+    "id": 4,
+    "name": "Obi-Wan Kenobi",
+    "species": "Human",
+    "birthYear": "57BBY",
+    "movies": ["Episode I", "Episode II", "Episode III", "Episode IV"],
+    "spaceships": ["Jedi starfighter"]
+  },
+  {
+    "id": 5,
+    "name": "Yoda",
+    "species": "Yoda's species",
+    "birthYear": "896BBY",
+    "movies": ["Episode I", "Episode II", "Episode III", "Episode V", "Episode VI", "Episode VIII"],
+    "spaceships": []
+  },
+  {
+    "id": 6,
+    "name": "Han Solo",
+    "species": "Human",
+    "birthYear": "32BBY",
+    "movies": ["Episode IV", "Episode V", "Episode VI", "Episode VII"],
+    "spaceships": ["Millennium Falcon", "Imperial shuttle"]
+  },
+  {
+    "id": 7,
+    "name": "Chewbacca",
+    "species": "Wookiee",
+    "birthYear": "200BBY",
+    "movies": ["Episode IV", "Episode V", "Episode VI", "Episode VII", "Episode VIII", "Episode IX"],
+    "spaceships": ["Millennium Falcon"]
+  },
+  {
+    "id": 8,
+    "name": "Rey",
+    "species": "Human",
+    "birthYear": "15ABY",
+    "movies": ["Episode VII", "Episode VIII", "Episode IX"],
+    "spaceships": ["Millennium Falcon"]
+  },
+  {
+    "id": 9,
+    "name": "Kylo Ren",
+    "species": "Human",
+    "birthYear": "5ABY",
+    "movies": ["Episode VII", "Episode VIII", "Episode IX"],
+    "spaceships": ["TIE Silencer"]
+  },
+  {
+    "id": 10,
+    "name": "R2-D2",
+    "species": "Droid",
+    "birthYear": "33BBY",
+    "movies": ["Episode I", "Episode II", "Episode III", "Episode IV", "Episode V", "Episode VI", "Episode VII", "Episode VIII", "Episode IX"],
+    "spaceships": ["Naboo Royal Starship", "X-wing"]
+  }
+]
