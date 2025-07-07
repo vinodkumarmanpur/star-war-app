@@ -7,18 +7,24 @@ import { map, Observable } from 'rxjs';
 })
 export class CharacterService {
 
-  private apiUrl = 'mock-characters.json';
+  private apiUrl = "https://swapi.info/api";
 
   constructor(private http: HttpClient) { }
 
   getAllCharacters(): Observable<any> {
-    return this.http.get(this.apiUrl);
+    return this.http.get(this.apiUrl + `/people`);
   }
 
   getCharacterById(id: number): Observable<any> {
-    return this.http.get<any[]>(this.apiUrl).pipe(
-      map(characters => characters.find(c => c.id === id))
-    );
+    return this.http.get<any>(`${this.apiUrl + `/people`}/${id}`);
+  }
+
+  getAllMovies(): Observable<any> {
+    return this.http.get(this.apiUrl + `/films`);
+  }
+
+  getAllSpecies(): Observable<any> {
+    return this.http.get(this.apiUrl + `/species`);
   }
 
 }

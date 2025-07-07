@@ -29,9 +29,9 @@ export class LayoutComponent {
 
   onFilterChanged(filters: any): void {
     this.filteredCharacters = this.allCharacters.filter((char: any) => {
-      const matchMovie = !filters.movie || char.movies.includes(filters.movie);
-      const matchSpecies = !filters.species || char.species === filters.species;
-      const matchBirthYear = this.birthYearInRange(char.birthYear, filters.birthYearFrom, filters.birthYearTo);
+      const matchMovie = !filters.movie || char.films.includes(filters.movie);
+      const matchSpecies = !filters.species || char.species.includes(filters.species);
+      const matchBirthYear = this.birthYearInRange(char.birth_year, filters.birthYearFrom, filters.birthYearTo);
       return matchMovie && matchSpecies && matchBirthYear;
     });
   }

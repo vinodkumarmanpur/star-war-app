@@ -1,18 +1,18 @@
 <div class="character-detail" *ngIf="character">
   <h2>{{ character.name }}</h2>
-  
+
   <div class="info-block">
     <strong>Species:</strong>
-    <span>{{ character.species }}</span>
+    <span> {{ speciesNames.length ? speciesNames.join(', ') : 'Unknown' }}</span>
   </div>
 
   <div class="info-block">
     <strong>Movies:</strong>
-    <span>{{ character.movies?.join(', ') || 'Unknown' }}</span>
+    <span> {{ filmTitles.length ? filmTitles.join(', ') : 'Unknown' }}</span>
   </div>
 
   <div class="info-block">
-    <strong>Spaceships:</strong>
-    <span>{{ character.spaceships?.join(', ') || 'None' }}</span>
+    <strong>Starships:</strong>
+    <span> {{ starshipNames.length ? starshipNames.join(', ') : 'None' }}</span>
   </div>
 </div>

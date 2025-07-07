@@ -11,7 +11,7 @@
         <tbody>
             <tr *ngFor="let character of characters; index as i">
                 <td>
-                    <a [routerLink]="['/character', character.id]" class="character-link">
+                    <a [routerLink]="['/character', i+1]" class="character-link">
                         {{ character.name }}
                     </a>
                 </td>

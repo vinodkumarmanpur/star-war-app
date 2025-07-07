@@ -6,7 +6,7 @@
         <label for="movie" class="form-label fw-bold">Movie</label>
         <select id="movie" class="form-select" [(ngModel)]="filters.movie" name="movie">
             <option value="">All</option>
-            <option *ngFor="let movie of movies" [value]="movie">{{ movie }}</option>
+            <option *ngFor="let movie of movies" [value]="movie.url">{{ movie.title }}</option>
         </select>
     </div>
 
@@ -15,7 +15,7 @@
         <label for="species" class="form-label fw-bold">Species</label>
         <select id="species" class="form-select" [(ngModel)]="filters.species" name="species">
             <option value="">All</option>
-            <option *ngFor="let s of speciesList" [value]="s">{{ s }}</option>
+            <option *ngFor="let s of speciesList" [value]="s.url">{{ s.name }}</option>
         </select>
     </div>
 
